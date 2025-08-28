@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeVerse</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        :root {
+            --color-primary: #FF4C60;    /* Tombol utama, heading */
+            --color-accent: #d7bfdc;     /* Highlight, hover state */
+            --color-secondary: #1B1B2F;  /* Background utama */
+            --text-color: whitesmoke;
+  }
+    </style>
+</head>
+<body>
+    
+    <!-- wrapper -->
+    <div class="realtive bg-[var(--color-secondary)] text-[var(--text-color)] min-h-screen">
+        <!-- Navbar -->
+        <header class="sticky top-0 container m-auto w-full flex justify-between py-6 items-center px-3">
+            <div class="flex justify-between gap-2">
+                <h1 class="text-2xl font-bold">AnimeVerse</h1>
+                <button id="themeToggle">
+                    🌙
+                </button>
+            </div>
+            <div class="">
+                <ul class="sm:flex gap-8 hidden">
+                    <li><a class="hover:text-[#d7bfdc]" href="#home">Home</a></li>
+                    <li><a class="hover:text-[#d7bfdc]" href="#anime">Anime</a></li>
+                    <li><a class="hover:text-[#d7bfdc]" href="#genre">Genre</a></li>
+                </ul>
+            </div>
+            <div class="sm:flex justify-between gap-2 hidden">
+                <a class="hover:text-[#d7bfdc] underline" href="#">Login</a>
+                <button class="bg-[var(--color-primary)] px-3 py-1 rounded-md" href="">Sign Up</button>
+            </div>
+            <svg class="flex sm:hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z"/></svg>
+        </header>
+
+        <!-- hero-section -->
+        <section class="container m-auto grid px-3 sm:grid-cols-2 grid-cols-1">
+            <!-- left -->
+            <div class=" w-full max-w-sm m-auto">
+                <h1 class="text-4xl md:text-7xl max-w-lg font-bold">Nonton Anime Favoritmu Kapanpun, Dimanapun</h1>
+                <p class="my-6">Nikmati streaming anime online dari koleksi terbaik dalam berbagai genre.</p>
+                <div class=" flex gap-2 my-9">
+                    <button class="rounded-md p-4 hover:brightness-120  duration-300 shadow-md bg-[var(--color-primary)] font-semibold">Nonton Sekarang</button>
+                    <button class="rounded-md p-4 hover:brightness-120  duration-300 shadow-md bg-[var(--color-accent)] font-semibold text-[var(--color-secondary)]">Lihat Trailer</button>
+                </div>
+            </div>
+
+             <!-- right -->
+            <div class="">
+                <img class="w-full max-w-sm m-auto rounded-3xl" src="assets/img/unnamed.png" alt="img">
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
