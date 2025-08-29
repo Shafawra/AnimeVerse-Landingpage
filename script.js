@@ -18,3 +18,19 @@ toggleMenu.addEventListener("click", () => {
     toggleMenu.innerHTML = isOpen ? closeIcon : menuIcon;
 })
 
+const cardCarousel = document.getElementById("cardCarousel");
+let arahScroll = 1;
+
+function jalanSendiri() {
+    cardCarousel.scrollLeft += arahScroll;
+
+    if(cardCarousel.scrollLeft + cardCarousel.clientWidth >= cardCarousel.scrollWidth) {
+        arahScroll = -1;
+    }
+
+    if(cardCarousel.scrollLeft <= 0) {
+        arahScroll = 1;
+    }
+}
+
+    setInterval(jalanSendiri, 20);
