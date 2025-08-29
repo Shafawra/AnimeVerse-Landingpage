@@ -1,24 +1,18 @@
 const toggleMenu = document.querySelector(".toggleMenu");
 const sidebar = document.querySelector(".sidebar");
 const closeSidebar = document.querySelector(".closeSidebar");
-const openIcon = document.querySelector(".openIcon");
-const closeIcon = document.querySelector(".closeIcon");
+
+const menuIcon = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z"/></svg>`;
+
+const closeIcon = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>`;
+
+toggleMenu.innerHTML = menuIcon;
+
+let isOpen = false;
 
 toggleMenu.addEventListener("click", () => {
-    sidebar.classList.toggle("-translate-x-full");
-    const isOpen = sidebar.classList.toggle("translate-x-0");
-
-    if (isOpen) {
-        openIcon.classList.add("opacity-0", "scale-0");
-        openIcon.classList.remove("opacity-100", "scale-100");
-    
-        closeIcon.classList.add("opacity-100", "scale-100");
-        closeIcon.classList.remove("opacity-0", "scale-0");
-      } else {
-        openIcon.classList.add("opacity-100", "scale-100");
-        openIcon.classList.remove("opacity-0", "scale-0");
-    
-        closeIcon.classList.add("opacity-0", "scale-0");
-        closeIcon.classList.remove("opacity-100", "scale-100");
-      }
+    isOpen = !isOpen;
+    toggleMenu.innerHTML = isOpen ? closeIcon : menuIcon;
 });
+
+
