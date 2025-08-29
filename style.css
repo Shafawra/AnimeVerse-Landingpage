@@ -1,5 +1,14 @@
-#cardCarousel {
+#cardCarousel,
+ .btnGenre {
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
+.btnGenre {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.btnGenre button {
+    scroll-snap-align: start;
+}

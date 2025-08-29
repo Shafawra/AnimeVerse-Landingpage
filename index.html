@@ -18,7 +18,7 @@
 <body class="bg-[whitesmoke]">
     
     <!-- wrapper -->
-    <div class="realtive bg-[var(--color-secondary)] text-[var(--text-color)] min-h-screen">
+    <div class="realtive bg-[var(--color-secondary)] text-[var(--text-color)] h-fit rounded-bl-[11rem]" >
         <!-- Navbar -->
         <header class="sticky top-0 container m-auto w-full flex justify-between py-6 items-center px-3 z-10 backdrop:blur-md bg-[var(--color-secondary)]/80">
             <div class="flex justify-between gap-2">
@@ -88,7 +88,7 @@
 
     <!-- card poster -->
     <section class="container m-auto px-4">
-        <h1 class="my-5 text-2xl md:text-3xl font-bold text[var(--color-secondary)]">🔥 Trending Anime Minggu Ini</h1>
+        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)]">🔥 Trending Anime Minggu Ini</h1>
 
         <!-- card-container -->
         <div id="cardCarousel" class=" flex gap-3 overflow-x-auto p-4 ">
@@ -169,6 +169,22 @@
                     <span class="text-sm text-yellow-400">⭐ 3.8</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- genre -->
+    <section class="container m-auto px-4">
+        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)] px-3">🎞️ Pilih Genre Favoritmu</h1>
+        <div class="btnGenre flex gap-3 overflow-x-auto p-3 whitespace-nowrap">
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Action</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Romance</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Comedy</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Fantasy</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Horror</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Musical</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Science Fiction</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Documentary</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Thriller</button>
         </div>
     </section>
 
