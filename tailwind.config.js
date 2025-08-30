@@ -1,0 +1,3 @@
+tailwind.config = {
+    darkmode: 'media',
+}

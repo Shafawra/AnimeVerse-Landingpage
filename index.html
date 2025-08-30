@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeVerse</title>
     <link rel="stylesheet" href="style.css">
+    <script src="tailwind.config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         :root {
@@ -15,17 +16,15 @@
   }
     </style>
 </head>
-<body class="bg-[whitesmoke]">
+<body class="bg-[whitesmoke] dark:bg-[#222]">
     
     <!-- wrapper -->
     <div class="realtive bg-[var(--color-secondary)] text-[var(--text-color)] h-fit rounded-bl-[11rem]" >
         <!-- Navbar -->
         <header id="home" class="sticky top-0 container m-auto w-full flex justify-between py-6 items-center px-3 z-10 backdrop:blur-md bg-[var(--color-secondary)]/80">
-            <div class="flex justify-between gap-2">
+            <div class="flex justify-between items-center gap-2">
                 <h1 class="text-2xl font-bold">AnimeVerse</h1>
-                <button id="themeToggle" class="cursor-pointer border rounded-sm p-1 hover:brightness-150">
-                    🌙
-                </button>
+                <span class="text-xl">🌙</span>
             </div>
             <div class="">
                 <ul class="md:flex gap-8 hidden">
@@ -88,7 +87,7 @@
 
     <!-- card poster -->
     <section id="anime" class="container m-auto px-4">
-        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)]">🔥 Trending Anime Minggu Ini</h1>
+        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)] dark:text-[var(--color-accent)]">🔥 Trending Anime Minggu Ini</h1>
 
         <!-- card-container -->
         <div id="cardCarousel" class=" flex gap-3 overflow-x-auto p-4 ">
@@ -174,7 +173,7 @@
 
     <!-- genre -->
     <section id="genre" class="container m-auto px-4">
-        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)] px-3">🎞️ Pilih Genre Favoritmu</h1>
+        <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)] px-3 dark:text-[var(--color-accent)]">🎞️ Pilih Genre Favoritmu</h1>
         <div class="btnGenre flex gap-3 overflow-x-auto p-3 whitespace-nowrap">
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Action</button>
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Romance</button>
@@ -195,7 +194,10 @@
         <!-- footer -->
         <footer class="container m-auto">
             <div class="flex flex-col sm:flex-row justify-between px-6 items-center">
-                <h1 class="text-2xl font-bold p-6">AnimeVerse</h1>
+                <div class="flex justify-between items-center gap-2 py-6">
+                    <h1 class="text-2xl font-bold">AnimeVerse</h1>
+                    <span class="text-xl">🌙</span>
+                </div>
 
                     <!-- nav -->
                     <ul class="flex gap-2 cursor-pointer ">
