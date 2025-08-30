@@ -20,10 +20,10 @@
     <!-- wrapper -->
     <div class="realtive bg-[var(--color-secondary)] text-[var(--text-color)] h-fit rounded-bl-[11rem]" >
         <!-- Navbar -->
-        <header class="sticky top-0 container m-auto w-full flex justify-between py-6 items-center px-3 z-10 backdrop:blur-md bg-[var(--color-secondary)]/80">
+        <header id="home" class="sticky top-0 container m-auto w-full flex justify-between py-6 items-center px-3 z-10 backdrop:blur-md bg-[var(--color-secondary)]/80">
             <div class="flex justify-between gap-2">
                 <h1 class="text-2xl font-bold">AnimeVerse</h1>
-                <button id="themeToggle">
+                <button id="themeToggle" class="cursor-pointer border rounded-sm p-1 hover:brightness-150">
                     🌙
                 </button>
             </div>
@@ -87,7 +87,7 @@
     </div>
 
     <!-- card poster -->
-    <section class="container m-auto px-4">
+    <section id="anime" class="container m-auto px-4">
         <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)]">🔥 Trending Anime Minggu Ini</h1>
 
         <!-- card-container -->
@@ -173,7 +173,7 @@
     </section>
 
     <!-- genre -->
-    <section class="container m-auto px-4">
+    <section id="genre" class="container m-auto px-4">
         <h1 class="my-5 text-2xl md:text-3xl font-bold text-[var(--color-secondary)] px-3">🎞️ Pilih Genre Favoritmu</h1>
         <div class="btnGenre flex gap-3 overflow-x-auto p-3 whitespace-nowrap">
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Action</button>
@@ -185,10 +185,37 @@
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Science Fiction</button>
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Documentary</button>
             <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Thriller</button>
+            <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Slice of Life</button>
         </div>
     </section>
 
+    <!-- wrapper -->
+    <div class="bg-[var(--color-secondary)] text-[var(--text-color)]">
 
+        <!-- footer -->
+        <footer class="container m-auto">
+            <div class="flex flex-col sm:flex-row justify-between px-6 items-center">
+                <h1 class="text-2xl font-bold p-6">AnimeVerse</h1>
+
+                    <!-- nav -->
+                    <ul class="flex gap-2 cursor-pointer ">
+                        <li class="text-xl font-semibold hover:text-[var(--color-accent)]">Tentang</li>
+                        <li class="text-xl font-semibold hover:text-[var(--color-accent)]">Privasi</li>
+                        <li class="text-xl font-semibold hover:text-[var(--color-accent)]">Kontak</li>
+                    </ul>
+
+                    <!-- sosmed -->
+                <div class="flex gap-2">
+                    <a href="#" ><img class="w-6 h-6 hover:scale-110 transition" src="assets/img/facebook.png" alt=""></a>
+                    <a href="#" ><img class="w-6 h-6 hover:scale-110 transition" src="assets/img/instagram.png" alt=""></a>
+                    <a href="#" ><img class="w-6 h-6 hover:scale-110 transition" src="assets/img/twitter.png" alt=""></a>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 text-xs mt-4">
+                &copy; <span id="year"></span> AnimeVerse. All rights reserved.
+            </div>
+        </footer>
+    </div>
 
 
     <script src="script.js"></script>

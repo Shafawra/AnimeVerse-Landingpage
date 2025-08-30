@@ -34,3 +34,5 @@ function jalanSendiri() {
 }
 
     setInterval(jalanSendiri, 20);
+
+document.getElementById("year").textContent = new Date().getFullYear();
