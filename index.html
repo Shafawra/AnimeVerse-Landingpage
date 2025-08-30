@@ -41,29 +41,12 @@
         </header>
 
         <!-- sidebar -->
-        <aside class="sidebar block fixed top-0 left-0 h-full w-60 bg-[var(--color-accent)] p-5 py-10 transform transition-all duration-300 z-50 sm:hidden -translate-x-full">
-            <ul class="flex flex-col gap-4">
-                <li class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="1B1B2F"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-                    <a class="text-[var(--color-secondary)] hover:text-[#FF4C60]" href="#home">Home</a>
-                </li>
-                <li class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1B1B2F"><path d="m440-803-83 83H240v117l-83 83 83 83v117h117l83 83 100-100 168 85-86-167 101-101-83-83v-117H523l-83-83Zm0-113 116 116h164v164l116 116-116 116 115 226q7 13 4 25.5T828-132q-8 8-20.5 11t-25.5-4L556-240 440-124 324-240H160v-164L44-520l116-116v-164h164l116-116Zm0 396Z"/></svg>
-                    <a class="text-[var(--color-secondary)] hover:text-[#FF4C60]" href="#anime">Anime</a>
-                </li>
-                <li class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1B1B2F"><path d="M260-160q-92 0-156-64T40-380q0-78 48.5-137.5T210-594q25-90 99-148t171-58q119 0 199.5 82.5T760-520q75 8 117.5 62T920-341q0 75-52.5 128T740-160H260Zm0-80h480q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-63 0-112 34.5T296-597q78 13 131 73.5T480-380h-80q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Z"/></svg>
-                    <a class="text-[var(--color-secondary)] hover:text-[#FF4C60]" href="#genre">Genre</a>
-                </li>
-                <div class="flex flex-col gap-4">
-                    <div class="flex gap-2 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1B1B2F"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                        <a class="text-[var(--color-secondary)] hover:text-[#FF4C60] underline" href="#">Login</a>
-                    </div>
-                    <button class="bg-[var(--color-primary)] hover:brightness-120  duration-300 shadow-md px-3 py-1 rounded-md" href="">Sign Up</button>
-                </div>
-            </ul>
-                
+        <aside class="sidebar">
+            <button class="toggleMenu"></button>
+            <div class="fixed w-72 bg-slate-500 h-screen z-50 left-0 top-0 p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Zm-60-80v-200l160 100-160 100Z"/></svg>
+            <input type="text" placeholder="Search Anime">
+            </div>
         </aside>
 
         <!-- hero-section -->
