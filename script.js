@@ -8,6 +8,7 @@ const closeIcon = `<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox
 toggleMenu.innerHTML = menuIcon;
 
 let isOpen = false;
+toggleMenu.innerHTML = menuIcon;
 
 toggleMenu.addEventListener("click", () => {
     isOpen = !isOpen;

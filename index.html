@@ -42,15 +42,15 @@
 
         <!-- sidebar -->
         <aside class="sidebar">
-            <div class="fixed w-72 bg-slate-500 h-screen z-50 left-0 top-0 p-5 sm:hidden transform duration-300 transition-all">
+            <div class="fixed w-72 bg-[var(--text-color)] dark:bg-[#222] h-screen z-50 left-0 top-79.98 p-5 sm:hidden transform duration-300 transition-all ">
 
                 <!-- search anime -->
-                <div class="flex gap-2 items-center pt-10 px-3">
+                <div class="flex gap-2 items-center pt-10 px-3 ">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Zm-60-80v-200l160 100-160 100Z"/></svg>
                     <h1 class="text-xl font-semibold">Search Anime</h1>
                 </div>
                 <div class="px-3 py-2">
-                    <input class="border px-3 py-1 rounded-md" type="text" placeholder="Search Anime">
+                    <input class="border px-3 py-1 rounded-md focus:ring-2" type="text" placeholder="Search Anime">
                 </div>
                 
 
@@ -60,17 +60,20 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M620-40q-104 0-183.5-62T331-260q45 2 89-9t84-31h164q1-11 1.5-21.5t.5-21.5q0-9-.5-18.5T668-380h-59q16-18 29.5-38t24.5-42h141q-20-30-48-52.5T693-547q5-20 6.5-41t.5-41q96 26 158 105.5T920-340q0 125-87.5 212.5T620-40Zm-95-102q-7-20-12.5-39t-9.5-39h-67q17 25 39.5 45t49.5 33Zm95 14q12-22 20.5-45t14.5-47h-70q6 24 15 47t20 45Zm95-14q27-13 49.5-33t39.5-45h-67q-5 20-10 39t-12 39Zm33-158h88q2-10 3-19.5t1-20.5q0-11-1-20.5t-3-19.5h-88q1 9 1.5 18.5t.5 18.5q0 11-.5 21.5T748-300Zm-408-20q-125 0-212.5-87.5T40-620q0-125 87.5-212.5T340-920q125 0 212.5 87.5T640-620q0 125-87.5 212.5T340-320Zm0-80q91 0 155.5-64.5T560-620q0-91-64.5-155.5T340-840q-91 0-155.5 64.5T120-620q0 91 64.5 155.5T340-400ZM240-640q17 0 28.5-11.5T280-680q0-17-11.5-28.5T240-720q-17 0-28.5 11.5T200-680q0 17 11.5 28.5T240-640Zm100 176q48 0 85.5-27t54.5-69H200q17 42 54.5 69t85.5 27Zm100-176q17 0 28.5-11.5T480-680q0-17-11.5-28.5T440-720q-17 0-28.5 11.5T400-680q0 17 11.5 28.5T440-640Zm-100 20Z"/></svg>
                         <h1 class="text-xl font-semibold">Genre</h1>
                     </div>
-                    <div class="btnGenre flex flex-col gap-3 p-3 whitespace-nowrap overflow-scroll">
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Action</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Romance</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Comedy</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Fantasy</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Horror</button>
-                        <!-- <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Musical</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Science Fiction</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Documentary</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Thriller</button>
-                        <button class="px-4 py-2 active:scale-75 rounded-md text-[var(--text-color)] bg-[var(--color-primary)] cursor-pointer hover:brightness-125 duration-300 shadow-md font-semibold">Slice of Life</button> -->
+                    <div class="py-2 px-3">
+                            <select class="focus:outline-none border px-3 py-1 rounded-md focus:ring-2 appearance-none" name="genre" id="genre">
+                                <option class="bg-gray-600" value="Action">Action</option>
+                                <option class="bg-gray-600" value="Romance">Romance</option>
+                                <option class="bg-gray-600" value="Comedy">Comedy</option>
+                                <option class="bg-gray-600" value="Fantasy">Fantasy</option>
+                                <option class="bg-gray-600" value="Horror">Horror</option>
+                                <option class="bg-gray-600" value="Musical">Musical</option>
+                                <option class="bg-gray-600" value="Science">Science</option>
+                                <option class="bg-gray-600" value="Documentary">Documentary</option>
+                                <option class="bg-gray-600" value="Thriller">Thriller</option>
+                                <option class="bg-gray-600" value="SliceOfLife">Slice Of Life</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
         </aside>
